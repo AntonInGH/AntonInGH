@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Sison_AG_Exercise 2 / Real Living Real Estate</title>
+    
+    <style type="text/css">
+        
+    header{
+        margin-left: 12.5%;
+        font-family: Garamond;
+        text-align: center;
+    }    
+        
+    ul {
+        list-style-type: none;
+        margin-right: 90px;
+        margin-left: -10px;
+        margin-top: -27px;
+        width: 12%;
+        padding: 0px;
+        background-color: white;
+        height: 100%; 
+        float: left;
+        position: fixed; 
+        overflow: auto;
+    }
+
+    li {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+        
+    a   {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;  
+        }
+    
+    img{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 3px;
+    }
+        
+    a:hover {
+        background-color: #555;
+        color: white;
+    }
+    
+    .searchbar { 
+        width: 90%;
+        max-width: 200px;
+        display: inline-flex;
+        margin-left: 72%;
+    }
+
+    .searchbar__input {
+        flex-grow: 1;
+        padding: 7px;
+        outline: none;
+    
+    }
+
+    .searchbar__input:focus {
+        background: white;
+        box-shadow: 0 0 2px;
+    }
+        
+    section {
+        margin-left: 30%;
+        margin-right: 18%;   
+    }
+        
+    legend {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        }
+        
+    label {
+        font-weight: bold;    
+        }
+    
+    input[type="text"], input[type="password"], input[type="date"], input[type="email"]{
+        
+        height: 20px;
+        font-family: tahoma;
+        }
+        
+    ::placeholder {
+        text-align: center;
+        }
+    
+    h1  {
+        font-family: Tahoma; 
+        font-size: 30px;
+        }    
+        
+    body {
+        font-family: Tahoma;
+        background-image: url(Images/bg.jpg);
+        background-size: cover;
+        }
+        
+    fieldset {
+        border: 2px solid black;
+        background-color: lightgray;
+        border-right: none; 
+        border-left: none;
+        border-bottom: none;
+        }
+        
+    .submit_button, .reset_button {
+        font-size: 17px;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 23%;
+        display: inline-flex;
+        background-color: ;
+        }
+    
+    .submit_button:hover{
+        background-color: white;
+        color: black;
+        }
+        
+    .reset_button:hover{
+        background-color: white;
+        color: black;
+        }    
+    
+    footer{
+        margin-left: 12.5%;
+        text-align: right;
+        font-size: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+<nav>
+<br/>
+<ul >
+    <li><img src="Images/logo.PNG" alt="logo;" style="height: 150px; width: 158px; margin-left: -18px;"></li>
+    <li><a href="page1.html">Home</a></li>
+    <li><a href="page2.html">Projects</a></li>
+    <li><a href="page3.html">Forms</a></li>
+</ul>
+    
+</nav>
+    
+<header>
+    <form action="http://www.google.com" method="get">
+    <div class="searchbar">
+        <input type="text" class="searchbar__input" name="q" placeholder="Search...">
+        <button type="submit" class="searchbar__button">
+            <i class="material-icons">Search</i>
+        </button>
+        
+    </div>
+    </form>
+    <br/>
+    <h1> Registration Form</h1>
+</header>
+ <br/>
+<section>
+
+    <form method="post" action="mailto:agtsison@mymail.mapua.edu.ph" autocomplete="on">
+        
+    <fieldset>  <!–– fieldset1 ––>
+        <legend>Personal Information</legend> <!–– Legend1 ––>
+        <br/>
+        
+        <label for="username">Username:</label>
+        <input type="text" placeholder="username" name="name" size="15" maxlength="20">
+        
+        <br/><br/>
+        
+        <label for="password">Password:</label>
+        <input type="password" placeholder="password" name="password" size="15" maxlength="20">
+        
+        <br/><br/>
+        
+        <label for="name">Name:</label>
+        
+        <input type="text" placeholder="first name" name="First name" size="23%" maxlength="40">
+        <input type="text" placeholder="middle name" name="Middle name" size="23%" maxlength="20">
+        <input type="text" placeholder="last name" name="Last name" size="23%" maxlength="30">
+        
+        <br/><br/>
+        
+        <label for="gender">Gender:</label>        
+        <input type="radio" name="gender" value="Male"> Male       <!–– Radio Button ––>
+        <input type="radio" name="gender" value="Female"> Female
+        
+        <br/><br/>
+        
+        <label for="age">Age:</label>
+        <input type="number" name="age" style="width: 40px;">
+        
+        <br/><br/>
+        
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday">
+        
+        <br/><br/>
+        
+        <label for="nationality">Nationality:</label>
+        <input type="text" placeholder="nationality" name="Nationality" size="30%" maxlength="20">
+        
+        <br/><br/>
+    
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email" name="email" size="30%" maxlength="100">
+    
+        <br/><br/>
+    
+        <label for="mobile_number">Mobile Number:</label>
+        <input type="text" placeholder="eg. 09XX-XXX-YYYY" name="Mobile number" size="30%" maxlength="11">
+        
+        <!–– I tried to put the type for the mobile number box to number instead of type but there was number scroller for it
+        so I stick with type ="text" because it looks much better ––>
+        
+        <br/><br/>
+        
+        <label for="home_address">Home Address:</label>
+        <br/><br/>
+        
+        <input type="text" placeholder="country" name="country" size="90%" maxlength="20">
+        <input type="text" placeholder="city" name="city" size="90%" maxlength="20">
+        <input type="text" placeholder="province" name="province" size="90%" maxlength="50">
+        <input type="text" placeholder="street" name="street" size="90%" maxlength="50">
+        
+        <br/><br/>
+        
+        <label for="mailing_address">Mailing Address:</label>
+        <br/><br/>
+        
+        <input type="text" placeholder="mailing address" name="mailing address" size="90%" maxlength="50">
+        
+        <br/><br/>
+    
+    </fieldset>
+        
+        <br/><br/>
+        
+    <fieldset>  <!–– fieldset2 ––>
+        <legend>Home Preference</legend> <!–– Legend2 ––>
+        
+        <br/>
+        <label for="house_budget">Buget for the house:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Bellow 2.5M">
+                <option value="2.5M-5M">
+                <option value="5M-7.5M">
+                <option value="7.5M-10M">
+                <option value="10M-15M">
+                <option value="15M and above">
+            </datalist>
+        <br/><br/>
+        
+        <label for="qestion">Which of the following do you want for you home design?</label>
+       
+        <br/><br/>
+        <input type="checkbox" name="Garden" value="Garden"> Garden
+    
+        <input type="checkbox" name="Garage" value="Garage"> Garage
+    
+        <input type="checkbox" name="Swimming Pool" value="Swimming Pool"> Swimming Pool
+        <br/>
+        <input type="checkbox" name="Gym" value="Gym"> Gym
+        <input type="checkbox" name="Home Theater" value="Home Theater"> Home Theater
+        <input type="checkbox" name="Entertainment Louge" value="Entertainment Louge"> Entertainment Louge
+    
+        <br/><br/>
+        
+        <label for="qestion">Which of the following do you think are not necessary for you home design?</label>
+        <br/><br/>
+        <input type="checkbox" name="Garden" value="Garden"> Garden
+    
+        <input type="checkbox" name="Garage" value="Garage"> Garage
+    
+        <input type="checkbox" name="Swimming Pool" value="Swimming Pool"> Swimming Pool
+        <br/>
+        <input type="checkbox" name="Gym" value="Gym"> Gym
+        <input type="checkbox" name="Home Theater" value="Home Theater"> Home Theater
+        <input type="checkbox" name="Entertainment Louge" value="Entertainment Louge"> Entertainment Louge
+    
+        <br/><br/>
+        
+        <label for="qestion">How do you make decisions when you find a new property?</label>
+        <br/><br/>
+        
+        <textarea rows="10" cols="88" id="suggestions"></textarea>
+        
+        <br/><br/>
+        <label for="qestion">Where do you think your house should be built?</label>
+    
+        <br/><br/>
+        
+        <textarea rows="10" cols="88" id="suggestions"></textarea>
+        
+        <br/><br/>
+        
+        <label for="qestion">What type of neighborhood do you want your house to be surrounded with?</label>
+    
+        <br/><br/>
+        
+        <textarea rows="10" cols="88" id="suggestions"></textarea>
+        
+        <br/><br/>
+        
+        <label for="target_date">When do you want the house to be finished?</label>
+        
+        <select id="day">
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+            <option> 4 </option>
+            <option> 5 </option>
+            <option> 6 </option>
+            <option> 7 </option>
+            <option> 8 </option>
+            <option> 9 </option>
+            <option> 10 </option>
+            <option> 11 </option>
+            <option> 12 </option>
+            <option> 13 </option>
+            <option> 14 </option>
+            <option> 15 </option>
+            <option> 16 </option>
+            <option> 17 </option>
+            <option> 18 </option>
+            <option> 19 </option>
+            <option> 20 </option>
+            <option> 21 </option>
+            <option> 22 </option>
+            <option> 23 </option>
+            <option> 24 </option>
+            <option> 25 </option>
+            <option> 26 </option>
+            <option> 27 </option>
+            <option> 28 </option>
+            <option> 29 </option>
+            <option> 30 </option>
+            <option> 31 </option>
+        </select>
+        
+        <select id="month">
+            <option> January </option>
+            <option> Febuary </option>
+            <option> March </option>
+            <option> April </option>
+            <option> May </option>
+            <option> June </option>
+            <option> July </option>
+            <option> August </option>
+            <option> September </option>
+            <option> October </option>
+            <option> November </option>
+            <option> December </option>
+        </select>
+        
+        <select id="year">
+            <option> 2022 </option>
+            <option> 2023 </option>
+            <option> 2024 </option>
+            <option> 2025 </option>
+            <option> 2026 </option>
+            <option> 2027 </option>
+            <option> 2028 </option>
+            <option> 2029 </option>
+            <option> 2030 </option>
+            <option> 2031 </option>
+            <option> 2032 </option>
+            <option> 2033 </option>
+            <option> 2034 </option>
+            <option> 2035 </option>
+            <option> 2036 </option>
+            <option> 2037 </option>
+            <option> 2038 </option>
+            <option> 2039 </option>
+            <option> 2040 </option>
+            <option> 2041 </option>
+            <option> 2042 </option>
+            <option> 2043 </option>
+            <option> 2044 </option>
+            <option> 2045 </option>
+            <option> 2046 </option>
+            <option> 2047 </option>
+            <option> 2048 </option>
+            <option> 2049 </option>
+            <option> 2050 </option>
+        </select>
+        <br/>
+        <br/>
+        
+    </fieldset>
+       
+        <br/><br/>
+        
+    <fieldset style="margin-right: -0.5%;">  <!–– fieldset3 ––>
+        <legend>Website Design Feedback</legend> <!–– Legend3 ––>
+        
+        <br/>
+        <label for="qestion">Do you like our website?</label>
+        <select>
+            <option> Yes </option>
+            <option> No </option>
+            <option> Maybe </option>
+        </select>
+        
+        <br/><br/>
+        
+        <label for="qestion">Does the colors and texts of the website look good?</label>
+        <select>
+            <option> Yes </option>
+            <option> No </option>
+            <option> Maybe </option>
+        </select>
+        
+        <br/><br/>
+        
+        <label for="qestion">Are the information and images relevant to the website?</label>
+        <select>
+            <option> Yes </option>
+            <option> No </option>
+            <option> Maybe </option>
+        </select>
+        
+        <br/><br/>
+        
+        <label for="qestion">Is everything  in the website well displayed?</label>
+        <select>
+            <option> Yes </option>
+            <option> No </option>
+            <option> Maybe </option>
+        </select>
+        
+        <br/><br/>
+        
+    </fieldset>
+    
+        <br/><br/>
+        
+    <fieldset style="margin-right: -0.5%;">  <!–– fieldset4 ––>
+        <legend>Website Exposure</legend> <!–– Legend4 ––>
+        
+        <br/>
+        <label for="qestion">How did you hear about our website?</label>
+        <br/><br/>
+        
+        <input type="radio" name="Advertisements" value="Advertisements"> Advertisements
+        <input type="radio" name="Socia1 Media" value="Social Media"> Social Media
+        <input type="radio" name="Search Engines" value="Search Engines"> Search Engines
+        <input type="radio" name="Friends" value="Friends"> Friends
+        <input type="radio" name="Others" value="Others"> Others
+        
+        <br/><br/>
+        
+        <label for="qestion">What browser are you using right now?</label>
+        <br/><br/>
+        
+        <input type="radio" name="Chrome" value="Chrome"> Chrome
+        <input type="radio" name="Safari" value="Safari"> Safari
+        <input type="radio" name="Microsoft Edge" value="Microsoft Edge"> Microsoft Edge
+        <input type="radio" name="Firefox" value="Firefox"> Firefox
+        <input type="radio" name="Others" value="Others"> Others
+        
+        <br/><br/>
+        
+        <label for="qestion">What device did you use to access the website?</label>
+        <br/><br/>
+        
+        <input type="radio" name="Desktop" value="Desktop"> Desktop
+        <input type="radio" name="Laptop" value="Laptop"> Laptop
+        <input type="radio" name="Mobile" value="Mobile"> Mobile
+        <input type="radio" name="Tablet" value="Tablet"> Tablet
+        <input type="radio" name="Others" value="Others"> Others
+        
+        <br/><br/>
+        
+        <label for="qestion">Are you satisfied with contents of the website?</label>
+        <br/><br/>
+        
+        <input type="radio" name="Very Satisfied" value="Very Satisfied"> Very Satisfied
+        <input type="radio" name="Satisfied" value="Satisfied"> Satisfied
+        <input type="radio" name="Neutral" value="Neutral"> Neutral
+        <input type="radio" name="Unsatisfied" value="Unsatisfied"> Unsatisfied
+        <input type="radio" name="Very Unsatisfied" value="Very Unsatisfied"> Very Unsatisfied
+        
+        <br/><br/>
+    </fieldset>
+        
+        <br/><br/>
+       
+        
+    <fieldset>  <!–– fieldset5 ––>
+        <legend>Comments and Suggestions</legend> <!–– Legend5 ––>
+        <br/>
+        <textarea rows="15" cols="88" id="suggestions"></textarea> <!–– Textarea ––>
+        <br/><br/>
+    </fieldset>
+    
+        <br/><br/>
+    
+        <input class="submit_button" type="submit" value="Submit"> <!–– Submit button ––>
+        <input class="reset_button" type="reset" value="Reset">   <!–– Reset button ––>
+        
+    </form>
+    <br/>
+    
+    
+</section>
+ <hr/>
+<footer>
+    © Real Living Real Estate 2021 All rights reserved.
+</footer>
+
+</body>
+
+
+</html>
